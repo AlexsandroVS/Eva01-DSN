@@ -6,7 +6,7 @@ app = Flask(__name__)
 
 os.environ['DATABASE_URL'] = 'postgresql://darkness:03tppNTXMmrzFDFriBfPGpaQ99VDrTYr@dpg-cvmpkk6mcj7s73bqum8g-a.oregon-postgres.render.com/test_ww0l' 
 
-DATABASE_URL = os.getenv('DATABASE_URL')  # Render proporciona esta variable
+DATABASE_URL = os.getenv('DATABASE_URL')  
 
 def get_db_connection():
     conn = psycopg2.connect(DATABASE_URL)

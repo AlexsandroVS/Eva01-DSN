@@ -1,4 +1,4 @@
-# Usa una imagen base ligera con Python 3.9
+# Imagen
 FROM python:3.9-slim
 
 # Establece el directorio de trabajo
@@ -13,7 +13,7 @@ COPY templates ./templates
 # Instala dependencias
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Variables de entorno (se sobrescriben en Render)
+# Variables de entorno 
 ENV FLASK_APP=app.py
 ENV FLASK_ENV=production
 ENV DATABASE_URL="postgresql://darkness:03tppNTXMmrzFDFriBfPGpaQ99VDrTYr@dpg-cvmpkk6mcj7s73bqum8g-a.oregon-postgres.render.com/test_ww0l"  
