@@ -19,7 +19,7 @@ ENV FLASK_ENV=production
 ENV DATABASE_URL="postgresql://darkness:03tppNTXMmrzFDFriBfPGpaQ99VDrTYr@dpg-cvmpkk6mcj7s73bqum8g-a.oregon-postgres.render.com/test_ww0l"  
 
 
-EXPOSE 10000
+EXPOSE 8080
 
 # Comando de inicio
 CMD ["gunicorn", "--bind", "0.0.0.0:10000", "app:app"]
